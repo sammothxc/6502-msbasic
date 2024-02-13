@@ -1,3 +1,4 @@
+6502 := 1
 .include "defines_6502.s"
 
 .ifdef CONFIG_2C
