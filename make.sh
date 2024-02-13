@@ -2,7 +2,7 @@ if [ ! -d tmp ]; then
 	mkdir tmp
 fi
 
-for i in 6502; do
+for i in diy65; do
 
 echo $i
 ca65 -D $i msbasic.s -o tmp/$i.o &&

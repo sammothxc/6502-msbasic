@@ -1,6 +1,6 @@
-.if .def(6502)
-6502 := 1
-.include "defines_6502.s"
+.if .def(diy65)
+DIY65 := 1
+.include "defines_diy65.s"
 .endif
 
 .ifdef CONFIG_2C
