@@ -1,5 +1,7 @@
+.if .def(6502)
 6502 := 1
 .include "defines_6502.s"
+.endif
 
 .ifdef CONFIG_2C
 CONFIG_2B := 1
