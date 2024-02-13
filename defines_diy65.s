@@ -10,13 +10,13 @@ CONFIG_2A := 1
 ; CONFIG_NO_LINE_EDITING := 1; support for "@", "_", BEL etc.
 ; CONFIG_NO_READ_Y_IS_ZERO_HACK := 1
 ; CONFIG_PEEK_SAVE_LINNUM := 1
-; CONFIG_SCRTCH_ORDER := 2
+CONFIG_SCRTCH_ORDER := 2
 
-; ; zero page
-; ZP_START1 = $00
-; ZP_START2 = $0D
-; ZP_START3 = $03
-; ZP_START4 = $13
+; zero page
+ZP_START1 = $00
+ZP_START2 = $0A
+ZP_START3 = $60
+ZP_START4 = $6B
 
 ; ; extra/override ZP variables
 ; CURDVC			:= $000E
@@ -31,11 +31,11 @@ CONFIG_2A := 1
 
 ; ; constants
 ; SPACE_FOR_GOSUB := $3E
-; STACK_TOP		:= $FA
-; WIDTH			:= 40
-; WIDTH2			:= 30
+STACK_TOP		:= $FA
+WIDTH			:= 40
+WIDTH2			:= 30
 
-; RAMSTART2		:= $0400
+RAMSTART2		:= $0400
 
 ; ; magic memory locations
 ; ENTROPY = $E844
@@ -47,14 +47,12 @@ CONFIG_2A := 1
 ; CHKOUT	:= $FFC9
 ; CLRCH	:= $FFCC
 ; CHRIN	:= $FFCF
-; CHROUT	:= $FFD2
 ; LOAD	:= $FFD5
 ; SAVE	:= $FFD8
 ; VERIFY	:= $FFDB
 ; SYS		:= $FFDE
-; ISCNTC	:= $FFE1
-; GETIN	:= $FFE4
+ISCNTC	:= $FFE1
 ; CLALL	:= $FFE7
 ; LE7F3	:= $E7F3; for CBM1
-; MONCOUT	:= CHROUT
-; MONRDKEY := GETIN
+MONCOUT	:= $FFD2
+MONRDKEY := $FFE4
