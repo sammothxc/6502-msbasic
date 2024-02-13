@@ -24,13 +24,13 @@ ZP_START4 = $6B
 ; Z96				:= $0096
 ; POSX			:= $00C6
 ; TXPSV			:= LASTOP
-; USR				:= GORESTART ; XXX
+USR				:= GORESTART ; XXX
 
 ; ; inputbuffer
 ; INPUTBUFFER     := $0200
 
 ; ; constants
-; SPACE_FOR_GOSUB := $3E
+SPACE_FOR_GOSUB := $3E
 STACK_TOP		:= $FA
 WIDTH			:= 40
 WIDTH2			:= 30
@@ -47,8 +47,8 @@ RAMSTART2		:= $0400
 ; CHKOUT	:= $FFC9
 ; CLRCH	:= $FFCC
 ; CHRIN	:= $FFCF
-; LOAD	:= $FFD5
-; SAVE	:= $FFD8
+LOAD	:= $FFD5
+SAVE	:= $FFD8
 ; VERIFY	:= $FFDB
 ; SYS		:= $FFDE
 ISCNTC	:= $FFE1
